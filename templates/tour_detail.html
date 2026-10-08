@@ -1,0 +1,8 @@
+<h1>{{ tour.title }}</h1>
+<p>{{ tour.description }}</p>
+<h3>Коментарии</h3>
+{% for comment in comments %}
+<li>{{ comment.text }}</li>
+<li>К этому туру еще нет комментариев.</li>
+{% endfor %}
+<a href="/">Назад к списку туров</a>

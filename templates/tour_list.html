@@ -1,0 +1,6 @@
+<h1>Список туров</h1>
+<h2>Доступные туры</h2>
+{% for tour in tours %}
+<a href="tour/{{ tour.id }}">{{tour.title }}</a>
+<li> Туров пока нет</li>
+{% endfor %}
