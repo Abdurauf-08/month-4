@@ -18,4 +18,3 @@ def tour_detail_view(request, pk):
 
                   
     
-

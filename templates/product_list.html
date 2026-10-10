@@ -1,0 +1,14 @@
+<title>Список товаров</title>
+<h1>Каталог товаров</h1>
+{% for product in products %}
+<li>
+    <a href="{% url 'product_detail' product.id %}">{{product.title}}
+
+    </a>
+    {{ product.price }} сом.
+</li>
+<a href="{% url 'product_detail' product.id %}">{{product.title}}</a>
+<li> Товары еще не добавлены </li>
+
+
+{% endfor %}

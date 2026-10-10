@@ -1,0 +1,28 @@
+<title>{{ product.title }}</title>
+
+<h1>{{ product.title }}</h1>
+<h3>Характеристика товара:</h3>
+<li><strong>Название (title):</strong>{{product.title}}</li>
+<li><stong>Описание (description):</stong>{{product.description}}</li>
+<li><stong>Цена (price):</stong>{{product.price}}</li>
+<li><stong>Бренд (brand):</stong>{{product.brand}}</li>
+<li><stong>Категория (category):</stong>{{product.category}}</li>
+<li><stong>Количество (stock):</stong>{{product.stock}} шт.</li>
+<li><stong>Дата добавления (created_at):</stong>{{created_at}}</li>
+<li><stong>Доступность (is_available):</stong>{{% if product.is_available %}}Да{{% else %}}Нет{{% endif %}}</li>
+
+<h3>Серийный номер </h3>
+<p>
+    {% if product.serialnumber %}
+    <code>{{ product.serialnumber.number }}</code>
+    {{% else %}}
+    Серийный номер отсутсвует. 
+    {% endif %}
+</p>
+
+<h3>Коментарии к товару: </h3>
+{% for comment in comments  %}
+<p>{{ comment.text }}</p>
+<p>Коментариев пока нет.</p>
+{% endfor % }
+
