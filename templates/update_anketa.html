@@ -1,0 +1,6 @@
+<h1>Изменить анкету</h1>
+<form  method="POST">
+    {% csrf_token %}
+    {{ form_anketa.as_p }}
+    <button type="submit">Изменить</button>
+</form>

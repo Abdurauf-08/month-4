@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'book',
     'tour',
     'myShop',
+    'anketa',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

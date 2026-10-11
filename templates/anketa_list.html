@@ -1,0 +1,16 @@
+<a href="/create_anketa/">Добавить</a>
+{% for i in anketa_list %}
+
+<p>{{ i.title }}</p>
+<p>{{ i.name }}</p>
+<p>{{ i.age }}</p>
+<p>{{ i.phone }}</p>
+<p>{{ i.email }}</p>
+<p>{{ i.city }}</p>
+<p>{{ i.description }}</p>
+<p>{{ i.image }}</p>
+ 
+<a href="/anketa_list/{{ i.id }}/update/">Изменить</a>
+<a href="/anketa_list/{{ i.id }}/delete/">Удалить</a>
+
+{% endfor %}
