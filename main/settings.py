@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'tour',
     'myShop',
     'anketa',
+    'user',
+    'captcha',
 ]
 
 

@@ -10,6 +10,7 @@ urlpatterns = [
     path('', include('tour.urls')),
     path('', include('myShop.urls')),
     path('', include('anketa.urls')),
+    path('', include('user.urls')),
 
 ]
 

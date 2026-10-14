@@ -1,0 +1,6 @@
+<h1>Регистрация</h1>
+<form  method="POST">
+    {% csrf_token %}
+    {{ form_todo.as_p }}
+    <button type="sumbit">Регистрация</button>
+</form>
