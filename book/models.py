@@ -11,6 +11,7 @@ class Book(models.Model):
     description = models.TextField(verbose_name='Описание')
     publisher = models.CharField(verbose_name='Издательство', max_length=100)
     is_available = models.BooleanField(verbose_name='Доступна ли книга в продаже')
+    views = models.PositiveIntegerField(default=0, null=True)
 
 
 
